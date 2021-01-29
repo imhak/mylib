@@ -1,0 +1,126 @@
+CREATE TABLE BOOK_NAME (\
+	Book_id			INTEGER NOT NULL UNIQUE AUTO_INCREMENT, \
+	Book_Path		CHAR(100) NOT NULL, \
+	ISBN			INTEGER NOT NULL, \
+	PRIMARY KEY		(Book_id) \
+);
+
+CREATE TABLE BOOK_TAG (\
+	ISBN			INTEGER	NOT NULL UNIQUE, \
+	Title			VARCHAR(50), \
+	Subtitle		VARCHAR(50), \
+	Publisher		VARCHAR(30), \
+	PublishedDate		DATE, \
+	PrintedPageCount 	INTEGER, \
+	FOREIGN KEY 		(ISBN REFERENCES BOOK_NAME ON UPDATE CASCADE) \
+);
+
+CREATE TABLE AUTHOR (\
+	Author 			VARCHAR(25), \
+	PRIMARY KEY 		(Author) \
+);
+
+CREATE TABLE BOOK_NAME_AUTHOR (\
+	ISBN 			INTEGER NOT NULL, \
+	Author 			VARCHAR(25) NOT NULL, \
+	FOREIGN KEY 		(ISBN) REFERENCES BOOK_NAME, \
+	FOREIGN KEY 		(Author) REFERENCES AUTHOR \
+);
+
+CREATE TABLE CATEGORY (\
+	Category		VARCHAR(17), \
+	PRIMARY KEY		(Category) \
+);
+
+CREATE TABLE BOOK_NAME_CATEGORY(\
+	ISBN 			INTEGER NOT NULL, \
+	Category 		VARCHAR(17) NOT NULL, \
+	FOREIGN KEY 		(ISBN) REFERENCES BOOK_NAME, \
+	FOREIGN KEY 		(Category) REFERENCES CATEGORY \
+);
+
+# 20210118_0855
+
+# 20210118_0901
+mysql -u admin_lab -p
+
+SHOW DATABASES;
++--------------------+
+| Database           |
++--------------------+
+| LAB                |
+| information_schema |
++--------------------+
+
+USE LAB;
+
+SHOW TABLES;
++---------------+
+| Tables_in_LAB |
++---------------+
+| BOOK_CATEGORY |
+| BOOK_NAME     |
++---------------+
+
+DROP TABLE IF EXISTS BOOK_CATEGORY, BOOK_NAME;
+Query OK, 0 rows affected (0.042 sec)
+
+SHOW TABLES;
+Empty set (0.000 sec)
+
+# -f 0903
+
+# 20210118_0905
+CREATE TABLE BOOK_TAG ( ISBN INTEGER NOT NULL UNIQUE,  Title VARCHAR(50),  Subtitle VARCHAR(50),  Publisher VARCHAR(30),  PublishedDate DATE,  PrintedPageCount INTEGER,  FOREIGN KEY (ISBN) REFERENCES BOOK_NAME ON DELETE CASCADE );
+ERROR 1005 (HY000): Can't create table `LAB`.`BOOK_TAG` (errno: 150 "Foreign key constraint is incorrectly formed")
+
+# -f 0940
+
+# 20210123_1555
+<2021-01-23 Sat 15:27> mysql history cmd
+#+BEGIN_SRC 
+less ~/.mysql_history
+
+start LAB database from scratch
+
+CREATE DATABASE LAB;
+
+MariaDB [LAB]> CREATE TABLE BOOK_NAME(
+    -> Book_id INTEGER NOT NULL AUTO_INCREMENT UNIQUE PRIMARY KEY,
+    -> Book_Path VARCHAR(100) NOT NULL,
+    -> ISBN INTEGER(15) NOT NULL UNIQUE);
+Query OK, 0 rows affected (0.004 sec)
+
+MariaDB [LAB]> CREATE TABLE BOOK_TAG (
+    -> ISBN INTEGER NOT NULL,
+    -> Title VARCHAR(50),
+    -> Subtitle VARCHAR(60),
+    -> Publisher VARCHAR(30),
+    -> PublishedDate DATE,
+    -> PrintedPageCount INTEGER,
+    -> FOREIGN KEY(ISBN) REFERENCES BOOK_NAME(ISBN));
+Query OK, 0 rows affected (0.004 sec)
+
+MariaDB [LAB]> CREATE TABLE BOOK_NAME_AUTHOR (
+    -> ISBN INTEGER(15) NOT NULL,
+    -> Author VARCHAR(25) NOT NULL,
+    -> FOREIGN KEY(ISBN) REFERENCES BOOK_NAME(ISBN),
+    -> FOREIGN KEY(Author) REFERENCES AUTHOR(Author)
+    -> );
+Query OK, 0 rows affected (0.004 sec)
+
+MariaDB [LAB]> CREATE TABLE CATEGORY (
+    -> Category VARCHAR(20) PRIMARY KEY);
+Query OK, 0 rows affected (0.004 sec)
+
+MariaDB [LAB]> CREATE TABLE BOOK_NAME_CATEGORY (
+    -> ISBN INTEGER(15) NOT NULL,
+    -> Category VARCHAR(20) NOT NULL,
+    -> FOREIGN KEY(ISBN) REFERENCES BOOK_NAME(ISBN),
+    -> FOREIGN KEY(Category) REFERENCES CATEGORY(Category)
+    -> );
+Query OK, 0 rows affected (0.005 sec)
+
+-f 1553
+
+#+END_SRC

@@ -1,0 +1,9 @@
+# Sat 23 Jan 2021 03:58:53 PM AWST
+
+pymsql
+pdfminer.six
+PyPDF2
+requests
+BeautifulSoup4
+
+# -f Sat 23 Jan 2021 04:00:01 PM AWST

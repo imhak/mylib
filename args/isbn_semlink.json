@@ -1,0 +1,79 @@
+{
+  "kind": "books#volume",
+  "id": "11NxcwgqdJkC",
+  "etag": "hKwcKIV9bxQ",
+  "selfLink": "https://www.googleapis.com/books/v1/volumes/11NxcwgqdJkC",
+  "volumeInfo": {
+    "title": "Taking Chances",
+    "subtitle": "Winning with Probability",
+    "authors": [
+      "John Haigh"
+    ],
+    "publisher": "Oxford University Press",
+    "publishedDate": "2003",
+    "description": "Taking Chances presents an entertaining and fascinating exploration of probability, revealing traps and fallacies in the field. It describes and analyzes a remarkable variety of situations where chance plays a role, including football pools, the Lottery, TV games, sport, cards, roulette, coins, and dice. The book guides the reader round common pitfalls, demonstrates how to make better informed decisions, and shows where the odds can be unexpectedly in your favor. This new edition has been fully updated, and includes information on \"Who Wants to be a Millionaire?\" and \"The Weakest Link\", plus a new chapter on Probability for Lawyers.\u003cbr\u003e",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "0198526636"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9780198526636"
+      }
+    ],
+    "readingModes": {
+      "text": false,
+      "image": true
+    },
+    "pageCount": 373,
+    "printedPageCount": 388,
+    "dimensions": {
+      "height": "20.00 cm",
+      "width": "19.30 cm",
+      "thickness": "2.50 cm"
+    },
+    "printType": "BOOK",
+    "categories": [
+      "Games & Activities / Gambling / General",
+      "Mathematics / Probability & Statistics / General"
+    ],
+    "averageRating": 3,
+    "ratingsCount": 1,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "1.4.0.0.preview.1",
+    "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=11NxcwgqdJkC&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE7353Ukv8C63BfvZArjCm1d3H2DUh93AmaAY6okYguKVkYn32oyHUhAX3XJeXWV8ALCDlw_WdQr7oKmY_5a_ooslFLbJktb7DyByq9DkF8VHBWYMUlb9UOZe2QLdYLP4M7KJ4BQr&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=11NxcwgqdJkC&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE739a0uQtR38kDugdIvQvOgz3w5JhQ9p72xlID_GF0TcaWGFInuOx-NpZFV5tBUQSYvIHlueHrmqXOhNpGY2ky9V2XsV1qiwuL0VMGzw3iVf9-zZWxdIhpThxGxtz9HdM6b0TNdI&source=gbs_api",
+      "small": "http://books.google.com/books/content?id=11NxcwgqdJkC&printsec=frontcover&img=1&zoom=2&edge=curl&imgtk=AFLRE73hZdE8zMD0c81P3l-z5Mh8_eX14rwMYEEherNElPZ5CIt0RoHVlz_d36O7lB1P7FBK7DR0ig7YB9r7Oq5kjrSYeJ_RpuXpITXy35XoEj4v9xp2eR8b-wImnacADIpOU4SMM8hf&source=gbs_api",
+      "medium": "http://books.google.com/books/content?id=11NxcwgqdJkC&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71kCYXnS3LEbjwUunAJQbOle90ZpijXRi0LMkUU949_mDGCyTY8zjQ_NlcqoQDo3k-t3xGuvw6v2l1uQMSQaqSIdTtj-Q1bNBMPSC8bRuKzwv50i-3IRqVs9HBit_B3qrHcbveO&source=gbs_api",
+      "large": "http://books.google.com/books/content?id=11NxcwgqdJkC&printsec=frontcover&img=1&zoom=4&edge=curl&imgtk=AFLRE727yPnnYpNucwVifjQONPxM149oGTbgJpyuO1nZClsNTUe-8z8TlAvtxyH_8yvqqLU93psIOJ0OaVYIUeV-Qn5Dh22YpdtcnpijFqYzkglIdAt9EIwY0jwnVnFFQmJobgS7D62g&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.nl/books?id=11NxcwgqdJkC&hl=&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=11NxcwgqdJkC&source=gbs_api",
+    "canonicalVolumeLink": "https://play.google.com/store/books/details?id=11NxcwgqdJkC"
+  },
+  "saleInfo": {
+    "country": "NL",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+  },
+  "accessInfo": {
+    "country": "NL",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+      "isAvailable": false
+    },
+    "pdf": {
+      "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=11NxcwgqdJkC&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+  }
+}
