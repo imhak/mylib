@@ -27,10 +27,10 @@ class mysql_database(object):
 
 	def database_authentication(self):
 		print('Enter Database Credentials:')
-		user_username= 'admin_lab'#input('Enter Username: ')
-		user_password= 'foo'#getpass.getpass('Enter Password: ')
-		sql_host= 'localhost'#input('Enter Host IP/Name: ')
-		user_database= 'LAB'#input('Enter Database Name: ')
+		user_username= input('Enter Username: ')
+		user_password= getpass.getpass('Enter Password: ')
+		sql_host= input('Enter Host IP/Name: ')
+		user_database= input('Enter Database Name: ')
 
 		parameters= {
 			'user' : user_username,
